@@ -1,0 +1,420 @@
+/*
+========
+05. testimonial
+=========================================
+*/
+.testimonial {
+    &-area {
+        &-3 {
+            @include mq(md) {
+                padding-top: 70px;
+            }
+            @include mq(sm) {
+                padding-top: 70px;
+            }
+            @include mq(xs) {
+                padding-top: 50px;
+            }
+        }
+    }
+    &__right {
+        @include mq(sm) {
+            padding: 0px 40px;
+        }
+        @include mq(xs) {
+            padding: 0;
+        }
+    }
+    &__area {
+        @include mq(lg) {
+            padding-top: 0;
+        }
+        @include mq(md) {
+            padding-top: 0;
+        }
+        @include mq(xs) {
+            padding-top: 0;
+            padding-bottom: 150px;
+        }
+        &-2 {
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            @include mq(lg) {
+                padding-bottom: 176px;
+            }
+            @include mq(md) {
+                padding-top: 25px;
+                background-position: bottom left;
+                padding-bottom: 162px;
+            }
+            @include mq(sm) {
+                padding-top: 0px;
+                margin-top: 25px;
+                padding-bottom: calc(106px + 55px);
+                background-position: bottom left;
+            }
+            @include mq(xs) {
+                margin-top: 0;
+                background-position: center;
+                background-size: cover;
+                padding-top: 35px;
+                padding-bottom: calc(105px + 50px);
+            }
+            @include mq(lg) {
+                background-image: none;
+            }
+        }
+        
+    }
+    &__thumb {
+        & img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            object-fit: cover;
+            height: 100%;
+            @include mq(lg) {
+                position: static;
+                width: 100%;
+            }
+            @include mq(md) {
+                position: static;
+                width: 100%;
+            }
+            @include mq(sm) {
+                display: none;
+            }
+            @include mq(xs) {
+                position: static;
+                width: 100%;
+            }
+        }
+        &-2  {
+            @include mq(xs) {
+                display: none;
+            }
+        }
+    }
+    &-active, &-active-2 {
+        & button{
+            &.slick-arrow {
+                position: absolute;
+                left: 5px;
+                top: calc(100% + 60px);
+                @include mq(xs) {
+                    top: calc(100% + 25px);
+                }
+            }
+            &.slick-next {
+                left: 64px;
+            }
+        }
+    }
+    &-active-2 {
+        margin-top: 35px;
+    }
+    &__box {
+        position: relative;
+        background-color: transparent;
+        &-wrapper {
+            padding: 40px;
+            padding-left: 130px;
+            background-color: $white;
+            position: relative;
+            z-index: 9;
+            padding-bottom: 50px;
+            &::before,&::after {
+                position: absolute;
+                left: 7px;
+                width: 0;
+                @include transition(.3s);
+                height: 7px;
+                background-color: $theme-color;
+                top: 100%;
+                z-index: 9;
+                content: "";
+            }
+            &::after {
+                width: 7px;
+                height: 0;
+                left: 100%;
+                top: 7px;
+            }
+            &:hover {
+                &::after {
+                    height: 100%;
+                }
+                &::before {
+                    width: calc(100% - 7px);
+                }
+            }
+            @include mq(xs) {
+                padding: 50px 30px;
+                padding-left: 50px;
+            }
+            &-2 {
+                padding: 0;
+                padding-right: 57px;
+                @include mq(lg) {
+                    background-color: transparent;
+                }
+                @include mq(md){
+                    background-color: transparent;
+                    padding-right: 287px;
+                }
+                @include mq(sm) {
+                    background-color: transparent;
+                }
+                @include mq(xs) {
+                    background-color: transparent;
+                }
+            }
+            @media (max-width: 450px) {
+                padding: 30px;
+                padding-left: 30px;
+            }
+        }
+        &::after {
+            position: absolute;
+            left: 50px;
+            top: 33px;
+            font-family: "Font awesome 5 pro";
+            font-size: 50px;
+            content: "";
+            font-weight: 300;
+            color: $theme-color;
+            z-index: 9;
+            @include mq(xs) {
+                left: 15px;
+                top: 14px;
+                transform: translateY(0);
+                font-size: 28px;
+            }
+            @media (max-width: 450px) {
+                display: none;
+            }
+        }
+        & p {
+            color: $theme-color-light-2;
+            font-size: 18px;
+            line-height: 1.9;
+            margin-bottom: 32px;
+            font-family: $rubik;
+        }
+        &-2 {
+            position: relative;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &-widget {
+        @include transition(.3s);
+        border: 8px solid $white-2;
+        padding: 50px 40px;
+        & i {
+            color: $theme-color;
+            font-size: 50px;
+            line-height: 1;
+        }
+        & p {
+            font-size: 15px;
+            margin-bottom: 0;
+            margin-top: 20px;
+            font-family: $rubik;
+            color: $theme-color-light-2;
+        }
+        & .client {
+            &__content {
+                padding-left: 15px;
+                & h6 {
+                    color: $theme-color-dark;
+                    font-size: 18px;
+                    line-height: 1;
+                    margin-bottom: 0;
+                }
+                & span {
+                    font-family: 'Rubik';
+                    color: $theme-color-light-2;
+                    font-size: 15px;
+                    line-height: 1;
+                    margin-top: 10px;
+                    display: block;
+                }
+            }
+        }
+        &:hover {
+            border-color: $theme-color;
+        }
+        @media (max-width: 450px) {
+            padding: 50px 19px;
+        }
+    }
+}
+.author {
+    &__desc {
+        overflow: hidden;
+        padding-left: 14px;
+        & h5 {
+            margin-bottom: 0;
+            line-height: 1;
+            & a {
+                font-size: 18px;
+                line-height: 1.6;
+                display: block;
+                color: $theme-color-dark;
+            }
+        }
+        & span {
+            color: $theme-color-2;
+            font-size: 15px;
+            font-family: $rubik;
+            display: block;
+        }
+    }
+    &__thumb {
+        float: left;
+        @include mq(xs) {
+            float: none;
+        }
+    }
+}
+.single-testimonial {
+    padding: 7px;
+    padding-left: 0;
+}
+ 
+
+.testimonial-active-3.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 83px;
+    @include mq(xs) {
+        margin-top: 30px;
+    }
+}
+.testimonial-transform{
+    transform: translateY(40px);
+    @include mq(lg) {
+        transform: translateY(0);
+        margin-top: 40px;
+    }
+    @include mq(md) {
+        transform: translateY(0);
+        margin-top: 0;
+    }
+    @include mq(sm) {
+        transform: translateY(0);
+        margin-top: 0;
+    }
+    @include mq(xs) {
+        transform: translateY(0);
+        margin-top: 0;
+    }
+}
+.testimonial-area {
+    @include mq(xl) {
+        padding: 50px 0;
+    }
+    @include mq(lg) {
+        padding: 85px 0;
+    }
+}
+.testimonial-area.faq-testimonial-area {
+    @include mq(xl) {
+        padding: 90px 0;
+    } 
+}
+
+.faq-testimonial {
+    @include mq(xl) {
+        margin-top: 50px;
+    }
+}
+.faq-contact {
+    @include mq(lg) {
+        padding: 50px 0;
+    }
+}
+.slick-arrow i {
+	font-weight: 500;
+}
+.testimonial__thumb-update {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    & img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .testimonial__area-2  {
+        background-image: none !important;
+    }
+}
+@media (max-width: 992px) {
+    .appoint-bg {
+        background-image: none !important;
+    }
+    .about__thumb {
+        margin-top: 0;
+    }
+    .gallery-item-wrapper .grid-item a {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1400px) {
+    li.d-none.d-lg-inline-block.shop-top {
+        float: right;
+    }
+}
+@media (max-width: 992px) {
+    .service__box-2 .service__content-3  {
+        padding: 42px 18px;
+    }
+    div.news__content h5 a {
+        font-size: 20px;
+        @media (max-width: 445px) {
+            font-size: 16px;
+        }
+    }
+}
+.testimonial__box-wrapper.test-padding {
+    @media (max-width: 450px) {
+        padding: 0;
+    }
+}
+.testimonial-area.testimonial-area-3 {
+    @include mq(xl) {
+        padding-bottom: 90px;
+    }
+    @include mq(lg) {
+        padding-bottom: 50px;
+    }
+    @include mq(md) {
+        padding-bottom: 50px;
+    }
+    @include mq(xs) {
+        padding-bottom: 50px;
+    }
+}
+.testimonial__area {
+    background-position: top right;
+}
+.author__metaq.author__metaq-1 .author__desc span {
+    color: #747ca2;
+}
+.testimonial-active.testimonial-active-update button.slick-arrow {
+    &:hover {
+        background-color: #fef22e;
+        border-color: #fef22e;
+        & i {
+            color: #15287d;
+        }
+    }
+}
+
+.testimonial-update {
+    background-position: bottom left;
+}

@@ -1,0 +1,57 @@
+/*
+========
+15. breadcrumb
+=========================================
+*/
+.breadcrumb {
+    margin-bottom: 0;
+    margin-top: 17px;
+    &-area {
+        height: 510px;
+        display: flex;
+        align-items: center;
+        @include mq(lg) {
+            height: 400px;
+        }
+        @include mq(md) {
+            height: 400px;
+        }
+        @include mq(xs) {
+            height: 350px;
+        }
+    }
+    &__content {
+        & h3 {
+            list-style-type: none;
+            font-size: 70px;
+            font-family: $poppins;
+            color: $white;
+            font-weight: bold;
+            margin-bottom: 0;
+            @include mq(xs) {
+                font-size: 25px;
+            }
+        }
+        & nav {
+            & ol {
+                & li,& a {
+                    line-height: 1;
+                    font-family: $rubik;
+                    color: $white;
+                    color: #ffffff;
+                    font-weight: 500;
+                    font-size: 15px;
+                    &.active {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    color: #fff;
+    font-size: 15px;
+}

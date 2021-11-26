@@ -1,0 +1,24 @@
+/*
+========
+22. shop
+=========================================
+*/
+.shop {
+    &-top {
+        & span {
+            color: $theme-color-dark;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 1;
+        }
+        & .nice-select {
+            border: 0;
+            &::after {
+                border-bottom-color: $theme-color-dark-6;
+                border-right-color: $theme-color-dark-6;
+                right: 0;
+            }
+        }
+    }
+}

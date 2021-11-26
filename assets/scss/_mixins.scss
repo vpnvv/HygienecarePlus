@@ -1,0 +1,136 @@
+/*
+********************************************************************
+************ 2. mixins
+********************************************************************
+*/
+@function _rgba($color, $opacity: 1) {
+    @return unquote("rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$opacity})");
+}
+@mixin transition($time) {
+    -webkit-transition: all $time linear 0s;
+    -moz-transition: all $time linear 0s;
+    -ms-transition: all $time linear 0s;
+    -o-transition: all $time linear 0s;
+    transition: all $time linear 0s;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+		@content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin mq($value) {
+    @if $value=='xxl' {
+        @media (min-width: 1500px) and (max-width: 1700px) {
+            @content;
+        }
+    }
+    @if $value=='xl' {
+        @media (min-width: 1200px) and (max-width: 1500px) {
+            @content;
+        }
+    }
+    @if $value=='lg' {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $value=='max-992' {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    @if $value=='md' {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $value=='xs' {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $value=='sm' {
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+}
+
+@mixin cmq($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin cmmq($min) {
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin cmaq($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin btn-move($bg-color) {
+	&:before {
+		position: absolute;
+		right: 0;
+		top: 0;
+		@include transition(.3s);
+		width: 0;
+		height: 100%;
+		background-color: $bg-color;
+		content: "";
+	}
+}
+@mixin btn-hover-move {
+	left: 0;
+	width: 100%;
+}
+@mixin commonInputColor {
+	color: $theme-color-dark;
+	font-size: 15px;
+	font-family: $rubik;
+	font-weight: $medium;
+}
+@mixin scaleUp {
+    animation-name: scaleUp;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+@mixin placeholderStyle {
+    color: $theme-color-dark;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@mixin serviceForm {
+	background: transparent;
+	border: 3px solid #1f328a;
+	font-size: 15px;
+	color: #b8c2f0;
+	font-weight: 400;
+}

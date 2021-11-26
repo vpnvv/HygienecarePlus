@@ -1,0 +1,75 @@
+/*
+========
+12. offer
+=========================================
+*/
+.offer {
+    &__wrapper {
+        @include mq(md) {
+            margin-top: 50px;
+        }
+        @include mq(sm) {
+            margin-top: 50px;
+        }
+        @include mq(xs) {
+            margin-top: 50px;
+        }
+    }
+    &-area {
+        @include mq(md) {
+            padding-top: 85px;
+            padding-bottom: 56px;
+        }
+        &-3 {
+            @include mq(md) {
+                padding-bottom: 55px;
+            }
+            @include mq(xs) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    &__content {
+        margin-top: 40px;
+        padding-right: 23px;
+        & h5 {
+            margin-bottom: 0;
+            font-size: 24px;
+            color: $white;
+        }
+        & p {
+            font-size: 15px;
+            color: $white;
+            margin-top: 20px;
+        }
+    }
+    &-box {
+        position: relative;
+        & .service__logo-3::after {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:hover {
+            & .service__logo-3::after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.icon-3 {
+    &.orange-icon {
+        border-color: $theme-color-dark-4;
+        & i {
+            color: $white;
+        }
+        &:hover {
+            border-color: $orange;
+            background-color: $orange;
+            & i {
+                color: $hr-color;
+            }
+        }
+    }
+}

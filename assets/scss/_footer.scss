@@ -1,0 +1,373 @@
+/*
+========
+09. footer
+=========================================
+*/
+.footer {
+    &__widget {
+        & h5 {
+            color: $white;
+            font-size: 24px;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+        & ul {
+            margin-top: 22px;
+            & li {
+                list-style-type: none;
+                & a {
+                    font-size: 15px;
+                    color: $theme-color-light-3;
+                    line-height: 40px;
+                    display: block;
+                    padding-left: 18px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 14px;
+                        line-height: 28px;
+                        font-family: 'Font awesome 5 pro';
+                        color: $theme-color-light-3;
+                        content: "\f105";
+                        @include transition(.3s);
+                    }
+                    &:hover {
+                        color: $orange;
+                        &::before {
+                            color: $orange;
+                        }
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        @include mq(lg) {
+            padding-left: 0;
+        }
+        @include mq(xs) {
+            margin-bottom: 30px;
+            padding-left: 0;
+        }
+        &-2 {
+            & ul {
+                & li {
+                    & a {
+                        font-size: 15px;
+                        color: $gray-8;
+                        line-height: 40px;
+                        display: block;
+                        padding-left: 18px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+    &__address {
+        & .logo-3 {
+            flex: 0 0 auto;
+        }
+        & .content {
+            padding-left: 23px;
+            & h5 {
+                font-size: 18px;
+                line-height: 1;
+                margin-bottom: 6px;
+            }
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #263c9b;
+        padding: 30px 0;
+        margin-top: 80px;
+        & p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 1;
+            font-family: 'Rubik';
+            color: $theme-color-light-3;
+        }
+    }
+    &__item {
+        & span {
+            @include mq(lg) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.news {
+    &-item-sm {
+        & .thumb {
+            & img{
+                float: left;
+            }
+        }
+        & .content {
+            padding-left: 18px;
+            overflow: hidden;
+            & h5 {
+                font-size: 15px;
+                line-height: 1.3;
+            }
+            & span {
+                font-size: 15px;
+                list-style: 1;
+                color: $theme-color-light-3;
+            }
+            & a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.date {
+    font-size: 13px;
+    line-height: 23px;
+    color: $theme-color-light-3;
+    margin-top: 5px;
+    & i {
+        color: $theme-color;
+        margin-right: 5px;
+    }
+}
+.logo-3 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: $theme-color;
+    color: $white;
+    font-size: 22px;
+}
+.single-news {
+    @include mq(lg) {
+        padding-right: 0;
+    }
+}
+
+.footer-area-2 {
+    & .footer__widget{
+        & h5 {
+            color: $theme-color-dark;
+            padding-right: 40px;
+            @include mq(xl) {
+                padding-right: 0;
+            }
+            @include mq(lg) {
+                padding-right: 0;
+            }
+            @include mq(max-992) {
+                padding-right: 0;
+            }
+        }
+        & ul {
+            & li {
+                & a {
+                    &::before {
+                        color: $theme-color-dark;
+                    }
+                    &:hover {
+                        &::before {
+                            color: $theme-color-2;
+                        }
+                        color: $theme-color-2;
+                    }
+                }
+            }
+        }
+        & p {
+            font-size: 15px;
+            padding-right: 74px;
+            color: $theme-color-light-2;
+            margin-top: 30px;
+            @include mq(md) {
+                padding-right: 14px;
+                font-size: 14px;
+            }
+        }
+        & .logo-3 {
+            background-image: -moz-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+        }
+    }
+    & p {
+        color: #747ca2;
+    }
+}
+.footer__bottom-2 {
+    border-color: #e7e9f2;
+}
+.footer-area-3 {
+    & h5 {
+        color: #15287d;
+    }
+    & ul {
+        & li {
+            & a {
+                &:hover{
+                   color: #007cfb;
+                   &::before {
+                        color: #007cfb;
+                    }
+                }
+            }
+        }
+    }
+    @include mq(md) {
+    padding-top: 70px;
+    margin-top: 0;
+    }
+}
+.footer-area-3 {
+    & p {
+        font-size: 15px;
+    }
+    @include mq(lg) {
+        padding-top: 75px;
+        margin-top: 10px;
+    }
+    @include mq(md) {
+        margin-right: 0;
+    }
+    @include mq(xs) {
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+}
+
+.footer-1 {
+    & span {
+        color: $theme-color-light-3;
+    }
+}
+.news__list {
+    padding-right: 6px;
+}
+.news-item-sm {
+	line-height: 1;
+    overflow: hidden;
+}
+.footer__social {
+    & a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #15287d;
+        background-color: #e7e9f2;
+        @include transition(.3s);
+        margin-right: 5px;
+        &:hover {
+            background-image: -moz-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(249,95,178) 0%, rgb(252,121,108) 100%);
+        background-color: transparent;
+        color: #fff;
+        }
+    }
+}
+.footer__social.d-flex.footer__social-3 a {
+	background: #e1e3eb;
+	color: $theme-color-dark;
+    &:hover {
+        background-color: $theme-color;
+        color: $white;
+    }
+}
+.footer__bottom-2 {
+    @include mq(xs) {
+        margin: 0;
+    }
+}
+.footer__widget-3 {
+    & ul {
+        & li {
+            & a {
+                color: #747ca2;
+                &::before {
+                    color: #15287d;
+                }
+            }
+        }
+    }
+    @include mq(max-992) {
+        padding-left: 0;
+    }
+}
+.logo-3 {
+    border-radius: 50%;
+}
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+@include mq(max-992) {
+    .single-news-2 {
+        padding-right: 0;
+    }
+}
+
+p.footer-text {
+    @include mq(md) {
+        margin-right: 0;
+    }
+}
+.appoint-flex {
+    @include mq(xs) {
+        flex-direction: column !important;
+        align-items: center;
+    }
+}
+
+
+.footer-space {
+    @media (max-width: 575px) {
+        margin-top: 0;
+    }
+}
+.footer-space-2 {
+    @media (max-width: 575px) {
+        margin-top: 20px;
+    }
+}
+.footer-space-3 {
+    @media (max-width: 992px) {
+        margin-top: 20px;
+    }
+}
+.blog-update {
+    @include mq(xs) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    & a,& .news-date {
+        @include mq(xs) {
+           margin-right: auto;
+           margin-left: 0;
+           margin-bottom: 10px;
+        }  
+    }
+}
+.date.data-2 {
+    & span {
+        color: #747ca2;
+    }
+    & i {
+        color: #fc796c;
+    }
+}
+.footer__address span {
+    color: #7183d4;
+}

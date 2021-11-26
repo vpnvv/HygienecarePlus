@@ -1,0 +1,187 @@
+/*
+========
+13. team
+=========================================
+*/
+.team {
+    &-area {
+        @include mq(md) {
+            margin-top: 55px;
+        }
+        &-3 {
+            @include mq(sm) {
+                margin-top: 45px;
+            }
+        }
+        &-4 {
+            @include mq(xs) {
+                margin-top: 45px;
+            }
+        }
+    }
+    &-content-box {
+        box-shadow: 0px 10px 30px 0px rgba(212, 212, 212, 0.3);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        & h5 {
+            line-height: 1;
+            font-size: 15px;
+            color: #15287d;
+            margin-top: 2px;
+        }
+    }
+    &__thumb {
+        overflow: hidden;
+        & img {
+            @include transition(.3s);
+        }
+    }
+    &__content {
+        padding: 0 30px;
+        &-wrapper {
+            padding: 29px;
+            margin-top: -30px;
+            position: relative;
+            z-index: 9;
+            box-shadow: 0px 10px 30px 0px rgba(212, 212, 212, 0.3);
+            background: $white;
+            & h5 {
+                font-size: 22px;
+                color: $theme-color-dark;
+                margin-bottom: 6px;
+                line-height: 1;
+                @include mq(lg) {
+                    font-size: 17px;
+                }
+                @include mq(xs) {
+                    font-size: 16px;
+                }
+            }
+            & span {
+                font-size: 15px;
+                font-family: $rubik;
+                color: $theme-color;
+                margin-top: 5px;
+                display: block;
+            }
+            @include mq(md) {
+                margin-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+        }
+        @include mq(max-992) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &-box {
+        & .team-social-wrapper {
+            max-height: 0;
+            overflow: hidden;
+            @include transition(.3s);
+        }
+        &:hover {
+            & .team-social-wrapper {
+                max-height: 90px;
+            }
+            & .team__thumb {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+.team-social {
+    display: flex;
+    justify-content: center;
+    & .icon-3 {
+        background-color: $gray-5;
+        border-color: transparent;
+        & i {
+            color: $theme-color;
+        }
+    }
+    & a {
+        margin: 3.5px;
+        overflow: hidden;
+        &:hover {
+            & .icon-3 {
+                background-color: $orange;
+                & i {
+                    color: $theme-color-dark;
+                }
+            }
+        }
+    }
+}
+
+
+.progress__text {
+    & h4 {
+        color: #15287d;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-family: 'Poppins';
+        @include mq(xs) {
+            font-size: 15px;
+        }
+    }
+}
+input.knob {
+    font-size: 40px;
+    color: #15287d;
+    font-family: 'Poppins';
+}
+
+.pl-md-0 {
+    @include mq(md) {
+        padding-left: 0;
+    }
+    @include mq(sm) {
+        padding-left: 0;
+    }
+    @include mq(xs) {
+        padding-left: 0;
+    }
+}
+.progress-box {
+    & .circle {
+        margin-bottom: 30px;
+    }
+}
+.team-social {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 122%;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+}
+.team__content-wrapper {
+    overflow: hidden;
+    & h5,& span {
+        @include transition(.3s);
+    }
+}
+.team__content:hover {
+    &  .team-social{
+        top: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+    & h5, & span {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

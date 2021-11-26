@@ -1,0 +1,207 @@
+/*
+********************************************************************
+************ 8. features
+********************************************************************
+*/
+
+.features {
+    &-area {
+        @include mq(lg){
+            margin-top: -220px;
+            padding-top: 300px;
+        }
+        @include mq(md) {
+            margin-top: 0;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        @include mq(xs) {
+            margin-top: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    &__content {
+        padding-top: 27px;
+        & h5 {
+            color: #15287d;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+    &__wrapper {
+        @include mq(md) {
+            transform: translatey(0);
+            margin-top: 50px;
+        }
+    }
+    &__thumb {
+        @include transition(.3s);
+        overflow: hidden;
+        
+        border-radius: 0px;
+        & img {
+            width: 100%;
+            @include transition(.5s);
+        }
+    }
+    &__box {
+        &:hover {
+            & .features__thumb {
+                box-shadow: 0px 10px 30px 0px rgba(126, 126, 126, 0.69);
+                border-radius: 15px;
+            }
+            & img {
+                transform: scale(1.1);
+            }
+    
+        }
+    }
+}
+
+.icon-3 {
+    position: relative;
+    overflow: hidden;
+    width: 45px;
+    @include transition(.3s);
+    height: 45px;
+    border: 2px solid $gray-2;
+    & i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 13px;
+        transform: translate(-50%,-50%);
+        @include transition(.3s);
+        &:last-child {
+            left: -50%;
+        }
+    }
+    &:hover {
+        background-color: $theme-color;
+        border-color: $theme-color;
+        & i {
+            color: $white;
+            &:first-child {
+                left: 150%;
+            }
+            &:last-child {
+                left: 50%;
+            }
+        }
+    }
+    &.theme-icon {
+        background-color: $theme-color;
+        border-color: transparent;
+        & i {
+            color: $white;
+        }
+        &:hover {
+            background-color: $orange;
+            & i {
+                color: $theme-color-dark;
+            }
+        }
+    }
+}
+.features-area-02 {
+    @include mq(lg) {
+        margin-top: 0;
+        padding-top: 70px;
+    }
+}
+.features-margin {
+    margin-top: -118px;
+    @include mq(xl) {
+        margin-bottom: 0;
+    }
+    @include mq(lg) {
+        margin-bottom: 0;
+    }
+    @include mq(md) {
+        margin-bottom: 0;
+    }
+    @include mq(xs) {
+        margin-top: 0;
+    }
+}
+.features-area-02-spacing {
+    margin-top: -180px;
+    @include mq(xl) {
+        margin-top: -265px;
+    }
+    @include mq(lg) {
+        margin-top: -250px;
+    }
+    @include mq(md) {
+        margin-top: -327px;
+    }
+}
+#ui-datepicker-div {
+    background-color: #253a98;
+    color: $white;
+    padding: 15px;
+}
+.news__thumb-inner  {
+    & .nice-select:after {
+        width: 10px;
+        height: 10px;
+        margin-top: -7px;
+    }
+}
+div.icon-3.bg-gradient-1:hover {
+    border-color: transparent;
+} 
+.features-top-space {
+    @include mq(md) {
+        padding-top: 350px;
+    }
+    @include mq(xs) {
+        padding: 50px 0;
+    }
+}
+.appoint-bg {
+    @media (max-width: 1250px) {
+        background-image: none !important;
+    }
+    @include mq(xs) {
+        padding: 30px;
+    }
+    @media  (max-width: 450px) {
+        padding: 30px 14px;
+    }
+}
+.appoint-form-area.appoint-space {
+    @include mq(xs) {
+        margin-top: 50px;
+    }
+}
+.feature-bg {
+    @include mq(xs) {
+        background-color: transparent;
+        padding-top: 0;
+    }
+}
+.mobile-toggle-bar-2.mobile-toggle-bar .toggle-btn.toggle-3 {
+    transform: translateY(0);
+    margin-top: -12px;
+}
+.f-space-2 {
+    @include mq(xs) {
+        padding-bottom: 50px;
+        background: transparent;
+        padding-top: 65px;
+    }
+}
+.features__content.style-2 {
+    & h5 {
+        @include mq(xxl) {
+            font-size: 15px;
+        }
+    }
+}
+.form-space {
+    @include mq(xs) {
+        margin-top: 0;
+    }
+}

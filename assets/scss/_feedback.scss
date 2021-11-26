@@ -1,0 +1,54 @@
+/*
+========
+18. feedback
+=========================================
+*/
+.feedback {
+    &__thumb {
+        & .user {
+            &-details {
+                overflow: hidden;
+                padding-left: 15px;
+                & h5 {
+                    color: $hr-color;
+                    @include transition(.3s);
+                    font-size: 18px;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                }
+                & span {
+                    font-family: 'Rubik';
+                    color: #747ca2;
+                    @include transition(.3s);
+                    font-size: 15px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    &__box {
+        background: $white;
+        @include transition(.3s);
+        padding: 42px 47px;
+        padding-bottom: 50px;
+        & p {
+            font-size: 15px;
+            font-family: $rubik;
+            margin-bottom: 0;
+            color: $theme-color-light-2;
+            line-height: 1.867;
+        }
+        &:hover {
+            background-color: $theme-color;
+            & p,& span,& h5 {
+                color: $white;
+            }
+        }
+        @include mq(lg) {
+            padding: 30px 30px;
+        }
+    }
+}
+.contact__form-2 .nice-select::after {
+    top: 20px;
+}

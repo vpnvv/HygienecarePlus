@@ -1,0 +1,189 @@
+/*
+********************************************************************
+************ 7. appoint
+********************************************************************
+*/
+
+.appoint {
+    
+    &-form {
+        position: relative;
+        z-index: 9;
+        background-color: $white;
+        box-shadow: 0px 10px 60px 0px rgba(212, 212, 212, 0.3);
+        padding: 50px 70px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-bottom: 30px;
+        background-size: contain;
+        & .form-group {
+            margin-bottom: 20px;
+            @include mq(md) {
+                width: 100%;
+                float: left;
+            }
+            @include mq(xs) {
+                padding: 31px 12px;
+            }
+            & input ,& .nice-select{
+                @include mq(md) {
+                    width: 100%;
+                    min-width: 100%;
+                }
+                @include mq(xs) {
+                    width: 100%;
+                    min-width: 100%;
+                }
+            }
+            @include mq(xs) {
+                padding: 0;
+            }
+        }
+        &-area {
+        
+            @include mq(md) {
+                margin-top: -55px;
+            }
+            @include mq(xs) {
+                margin-top: -55px;
+            }
+        }
+        & form {
+            display: flex;
+            flex-wrap: wrap;
+            @include mq(md) {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            @include mq(xs) {
+                .appoint-form form {
+                    display: block;
+                }
+            }
+            & label {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                font-size: 15px;
+                color: $theme-color-dark;
+                transform: translateY(-50%);
+            }
+        }
+        & input ,& .nice-select{
+            height: 60px;
+            min-width: 310px;
+            padding-left: 28px;
+            border: 2px solid $gray;
+            @include commonInputColor;
+            @include placeholder{
+                @include commonInputColor;
+            }
+            @include mq(xs) {
+                min-width: 100%;
+            }
+        }
+        & .nice-select {
+            line-height: 60px;
+            border-radius: 0;
+            & span.current {
+                color: $theme-color-dark;
+            }
+            @include mq(xs) {
+                width: 100%;
+            }
+        }
+        @include mq(lg) {
+            width: 91%;
+            padding: 35px 35px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include mq(xs) {
+            padding: 27px 10px;
+            background-image: none;
+        }
+    }
+    &-wrapper {
+        & .generic-btn {
+            margin: 0 12.5px;
+            margin-right: 0;
+        }
+        @include mq(xs) {
+        padding: 0 32px;
+        display: grid;
+        grid-gap: 14px;
+        }
+    }
+}
+.appointment-area-2 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include mq(lg) {
+        padding: 70px 0;
+    }
+    @include mq(md) {
+        padding: 90px 0;
+    }
+    @include mq(sm) {
+        padding: 65px 0;
+    }
+    @include mq(xs) {
+        padding: 54px 0;
+    }
+}
+.date {
+    & i {
+        font-weight: 400;
+    }
+}
+
+.appointment-area {
+    &-4 {
+        @include mq(lg) {
+            margin-top: 0;
+            padding: 100px 0;
+        }
+        @include mq(xs) {
+            margin-top: 0;
+            padding: 100px 0;
+        }
+    }
+}
+.news__thumb-inner {
+    @include mq(xs) {
+        width: 100%;
+    }
+}
+button.generic-btn.appointment-btn {
+    padding: 7px 25px;
+    @include mq(xs) {
+        padding: 13px ​30px;
+    }
+    @media (max-width: 450px) {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    & .icon-2 {
+        @media (max-width: 450px) {
+            margin-left: 9px;
+        }
+        & span {
+            @media (max-width: 450px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+.features-area-02-spacing {
+    @include mq(xs) {
+        padding-top: 50px;
+    }
+}
+.appoint-btn-2 {
+    @include mq(xs) {
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,48 @@
+.project {
+    &__list {
+        & ul {
+            & li {
+                list-style-type: none;
+                overflow: hidden;
+                line-height: 1;
+                margin-bottom: 27px;
+                & b {
+                    color: $theme-color-dark;
+                    font-size: 15px;
+                    line-height: 1;
+                    max-width: 110px;
+                    min-width: 110px;
+                    margin-right: 8px;
+                    float: left;
+                }
+                & ul {
+                    overflow: hidden;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.list-span {
+    overflow: hidden;
+    color: #747ca2;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.cat__list {
+    &  ul {
+        & li {
+            display: inline-block;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.f-500 {
+    font-weight: 500 !important;
+}

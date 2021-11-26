@@ -1,0 +1,96 @@
+/*
+********************************************************************
+************ 1. variables
+********************************************************************
+*/
+
+
+
+
+// Font Family
+$poppins: 'Poppins', sans-serif;
+$rubik: 'Rubik', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+$body-fz: 16px;
+// Colors ---------------
+$white: #ffffff;
+$white-2: #f2f8ff;
+$white-3: #e9ebf4;
+$black: #222;
+$body-fonts: $poppins;
+$header-fonts: $poppins;
+$red: #d81324;
+$gray:#eff1f7;
+$gray-2: #f1f2f8;
+$gray-3: #eff1f6;
+$gray-4: #eef0f6;
+$gray-5: #e7e9f2;
+$gray-6: #f8f8f8;
+$gray-7: #eaeaea;
+$gray-8: #747ca2;
+$gray-dark-1: #646464;
+$gray-dark-2: #e4e4e4;
+$theme-color: #007cfb;
+$theme-color-dark: #15287d;
+$theme-color-dark-2: #253a98;
+$theme-color-dark-3: #1f338c;
+$theme-color-dark-4: #2d3e8a;
+$theme-color-dark-5: #1f328a;
+$theme-color-dark-6: #0b2154;
+$theme-color-light: #3a4268;
+$theme-color-light-2: #747ca2;
+$theme-color-light-3: #7183d4;
+$theme-color-light-4: #7c89c5;  
+$theme-color-light-5: #2a3678;
+$theme-color-light-6: #b8c2f0;
+$theme-color-light-7: #ccd3f1;
+$theme-color-light-8: #3147a7;
+$theme-color-light-9: #f0f1f8;
+$hr-color: #15287d;
+$theme-color-opacity: #0e85ff;
+$theme-color-opacity-2: #6bb4ff;
+$theme-color-opacity-3: #edf6ff;
+$body-color: #899399;
+$hr-border-color:#eceff8;
+$orange: #fef22e;
+$orange-2: #ffc601;
+$theme-2: #f7f7f7;
+$theme-color-2: #fc796c;
+$theme-color-2-light: #f597ac;
+$dark: #000;
+// font weight
+$header-fw: 600;
+$head-fw: 600;
+// border color
+$border-color-1: #263b96;
+// Heading Color
+$heading-color: #121121;
+// Soft color
+$black-soft:#7e7e7e;
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$min-tab: 'only screen and (min-width: 992px)';
+$max-1700: 'only screen and (max-width: 1700px)';
+$max-1800: 'only screen and (max-width: 1800px)';
+$max-1480: 'only screen and (max-width: 1480px)';
+$max-1250: 'only screen and (max-width: 1250px)';
+$max-1200: 'only screen and (max-width: 1200px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$laptop-2: 'only screen and (min-width: 1200px) and (max-width: 1500px)';
+$laptop-3: 'only screen and (min-width: 1200px) and (max-width: 1415px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$sm-2: 'only screen and (max-width: 600px)';
+
+// font weight
+$medium: 500;
+$extra-bold: 600;
+$bold: 700;

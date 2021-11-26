@@ -1,0 +1,108 @@
+/*
+========
+06. counter
+=========================================
+*/
+.counter {
+    &-area {
+        @include mq(xl) {
+            padding: 0 90px;
+        }
+        @include mq(lg){
+            padding: 0 10px;
+        }
+        @include mq(md){
+            padding: 0 10px;
+        }
+        @include mq(xs) {
+            padding: 0;
+            margin-top: 198px;
+        }
+        &-2 {
+            @include mq(lg) {
+                margin-top: 145px;
+                padding: 0 50px;
+            }
+            @include mq(md) {
+                margin-top: 0;
+            }
+            & .counter-wrapper {
+                @include mq(sm) {
+                    margin-top: 50px;
+                }
+            }
+        }
+        &-3 {
+            @include mq(xs) {
+                margin-top: 75px;
+            }
+        }
+    }
+    &__content {
+        padding-left: 30px;
+        text-align: left;
+        & h5 {
+            font-size: 45px;
+            color: $white;
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+        & span.caption {
+            font-size: 15px;
+            font-family: $rubik;
+            color: $white;
+            line-height: 1;
+        }
+        @include mq(lg) {
+            padding-left: 10px;
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-wrapper {
+        background-color: $theme-color-dark;
+        padding: 55px 15px;
+        position: relative;
+        z-index: 9;
+        padding-bottom: 60px;
+        &-2 {
+            padding: 65px 0;
+            padding-bottom: 75px;
+        }
+    }
+    &__logo {
+        & i {
+            &::before {
+                color: $white;
+                font-size: 62px;
+            }
+        }
+    }
+}
+.counter-area-2 {
+    & .counter-wrapper {
+        @include mq(lg) {
+            padding: 55px 30px;
+            padding-bottom: 30px;
+        }
+    }
+    @include mq(sm) {
+        margin-top: 55px;
+    }
+    @include mq(xs) {
+        margin-top: 5px;
+    }
+}
+.counter__box-2 {
+    @media (max-width: 575px) {
+        justify-content: flex-start;
+    }
+}
+.counter-wrapper.counter-wrapper-2.counter-space {
+    @media (max-width: 575px) {
+        padding: 36px;
+    }
+}

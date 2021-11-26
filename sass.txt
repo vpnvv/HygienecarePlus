@@ -1,0 +1,1 @@
+sass --watch F:\sass-online\fundo\assets\scss\main.scss:F:\sass-online\fundo\assets\css\main.css

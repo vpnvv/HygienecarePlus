@@ -1,0 +1,564 @@
+/*
+========
+07. news
+=========================================
+*/
+.news {
+    &-padding {
+        padding: 0 70px;
+        @include mq(xs) {
+            padding: 0 5px;
+        }
+    }
+    &__link-2 {
+        & i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &__desc {
+        & p {
+            font-size: 15px;
+            font-family: $rubik;
+            color: $theme-color-light-2;
+            line-height: 1.867;
+            margin-top: 20px;
+        }
+    }
+    &__left {
+        &-2 {
+            & p {
+                margin-top: 28px;
+                margin-bottom: 0;
+                color: $theme-color-light-2;
+            }
+        }
+    }
+    &-area {
+        @include mq(lg){
+            padding-top: 70px;
+        }
+        @include mq(md){
+            padding-top: 70px;
+        }
+        @include mq(xs){
+            padding-top: 50px;
+        }
+        &-2 {
+            @include mq(lg) {
+                padding-bottom: 30px;
+            }
+            @include mq(md) {
+                padding-top: 55px;
+                padding-bottom: 15px;
+            }
+            @include mq(sm) {
+                padding-top: 55px;
+                padding-bottom: 15px;
+            }
+            @include mq(xs) {
+                padding-top: 50px;
+                padding-bottom: 15px;
+            }
+
+        }
+        &-3 {
+            @include mq(xs) {
+                padding-top: 50px;
+                padding-bottom: 15px;
+            } 
+        }
+    }
+    &-box {
+        &-2 {
+            & .news__thumb {
+                overflow: hidden;
+            }
+            & img {
+                @include transition(.3s);
+            }
+            &:hover {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &__thumb {
+        position: relative;
+        &-inner {
+            margin-right: 20px;
+            position: relative;
+            margin-bottom: 25px;
+        }
+        & img {
+            @include transition(.3s);
+        }
+    }
+    &__action {
+        position: absolute;
+        bottom: -25px;
+        right: 30px;
+    }
+    &__content {
+        margin-top: 23px;
+        & h5 {
+            margin-bottom: 0;
+            list-style: 1;
+            & a {
+                font-size: 24px;
+                line-height: 1.4;
+                color: $theme-color-dark;
+                @include mq(lg) {
+                    font-size: 20px;
+                }
+                @include mq(xs) {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-2 {
+            padding: 0 30px;
+            &-wrapper {
+                padding: 25px 35px;
+                margin-top: -25px;
+                background: $white;
+                box-shadow: 0px 10px 30px 0px rgba(212, 212, 212, 0.4);
+                position: relative;
+                z-index: 9;
+                &:hover {
+                    & .learn-more-link {
+                        max-height: 50px;
+                    }
+                }
+                @include mq(xl) {
+                    padding: 25px 20px;
+                }
+                @include mq(max-992) {
+                    padding: 25px 25px;
+                }
+                @include mq(xs) {
+                    padding: 17px 14px;
+                }
+            }
+            @include mq(xl) {
+                padding: 0 25px;
+            }
+            @include mq(max-992) {
+                padding: 0 15px;
+            }
+            @include mq(xs) {
+                padding: 0 7px;
+            }
+        }
+        &-link {
+            & h5 {
+                margin-top: 7px;
+                color: $theme-color-dark;
+                line-height: 1.6;
+                margin-bottom: 0;
+                @include mq(lg) {
+                    font-size: 14px;
+                }
+                @include mq(md) {
+                    font-size: 16px;
+                }
+                @include mq(sm) {
+                    font-size: 12px;
+                }
+            }
+        }
+        &-wrapper {
+            &-2 {
+                @include mq(lg) {
+                    margin-top: 30px;
+                }
+            }
+       }
+    }
+    &__sidebar {
+        &-item {
+            background: $theme-color-opacity-3;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            @include mq(lg) {
+                padding: 14px;
+            }
+            @include mq(md) {
+                padding: 14px;
+            }
+            & h5 {
+                color: $theme-color-dark;
+                font-size: 20px;
+                line-height: 1.4;
+                margin-top: 12px;
+                margin-bottom: 0;
+                @include mq(lg){
+                    font-size: 15px;
+                    margin-top: 6px;
+                }
+               
+            }
+            & .sidebar-icon {
+                @include mq(lg) {
+                    margin-top: 0;
+                }
+                @include mq(md) {
+                    margin-top: 0;
+                }
+            }
+            &:hover {
+                & .sidebar {
+                    &-icon {
+                        & i {
+                            &:first-child {
+                                left: 50%;
+                            }
+                            &:last-child {
+                                left: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+            & .content {
+                @include mq(lg) {
+                    padding-left: 17px;
+                }
+                @include mq(md) {
+                    padding-left: 17px;
+                }
+            }
+            @include mq(xs)  {
+                display: block;
+            }
+        }
+    }
+    &__wrapper {
+        &-3 {
+            @include mq(sm) {
+                padding-top: 70px;
+            }
+            @include mq(xs) {
+                padding-top: 50px;
+            }
+        }
+    }
+}
+
+.author {
+    &__content {
+        &-2 {
+            
+            & a {
+                color: $theme-color-light-2;
+                font-size: 15px;
+                line-height: 1;
+                display: inline-block;
+                &:hover {
+                    color: #007cfb;
+                }
+                @include mq(lg) {
+                    padding-left: 0;
+                
+                }
+                @include mq(md) {
+                    padding-left: 0;
+                
+                }
+                @include mq(xs) {
+                    padding-left: 0;
+                
+                }
+            }
+            &.author-padding {
+                & a {
+                     @include mq(xs) {
+                         padding-left: 15px;
+                     }
+                }
+             }
+        }
+    }
+}
+.sidebar {
+    &-icon {
+        width: 22px;
+        height: 25px;
+        position: relative;
+        overflow: hidden;
+        & i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transition(.3s);
+            transform: translate(-50%,-50%);
+            font-size: 15px;
+            color: $hr-color;
+            font-weight: 400;
+            &:first-child {
+                left: -50%;
+            }
+        }
+    }
+}
+
+.sm-thumb {
+    & img {
+        max-width: 150px;
+        object-fit: cover;
+        @include mq(lg) {
+            height: auto;
+        }
+        @include mq(md) {
+            height: auto;
+        }
+    }
+}
+.single-tag {
+    color: $theme-color-2;
+    font-size: 15px;
+    line-height: 1;
+    padding-right: 25px;
+    margin-right: 20px;
+    position: relative;
+    &::after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        content: "";
+        background-color: $theme-color-2;
+    }
+    @include mq(lg) {
+        font-size: 12px;
+        padding-right: 18px;
+        margin-right: 15px;
+    }
+    @include mq(sm) {
+        font-size: 11px;
+    padding-right: 11px;
+    margin-right: 3px;
+    }
+}
+.tag-2 {
+    color: $theme-color-light-2;
+    font-size: 15px;
+    line-height: 1;
+    font-family: $rubik;
+    @include mq(lg) {
+        font-size: 12px;
+    }
+    @include mq(sm) {
+        font-size: 11px;
+    }
+}
+
+.learn-more-link {
+    max-height: 0;
+    @include transition(.3s);
+    overflow: hidden;
+    &__btn {
+        margin-top: 13px;
+        color: $theme-color-2;
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        border-bottom: 2px solid $theme-color-2;
+        display: inline-block;
+        &:hover {
+            color: $theme-color-2;
+        }
+        
+    }
+}
+
+.news__wrapper {
+    &.has-border-top {
+        border-top: 1px solid #e7e9f2;
+        padding-top: 130px;
+    }
+    &-2 {
+        @include mq(lg) {
+            margin-top: 50px;
+        }
+    }
+    &-3 {
+        @include mq(md) {
+            padding-top: 70px;
+        }
+    }
+}
+.news-date {
+    color: #747ca2;
+    font-size: 15px;
+    line-height: 1;
+    display: inline-block;
+    padding-left: 40px;
+    margin-left: 40px;
+    position: relative;
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: $theme-color;
+        border-radius: 50%;
+        content: "";
+    }
+    & i {
+        margin-right: 10px;
+    }
+}
+.news__content-wrapper-2 {
+  box-shadow: 0px 10px 30px 0px rgba(223, 223, 223, 0.3);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  @include mq(xs) {
+    padding: 30px
+  }
+}
+.author-box {
+    background: $gray-4;
+    padding: 50px 70px;
+    padding-top: 45px;
+    & h4 {
+        font-size: 30px;
+        line-height: 1.2;
+        color: $theme-color-dark;
+        margin-bottom: 0;
+        @include mq(xs) {
+            font-size: 17px;
+        }
+    }
+    & span {
+        font-size: 18px;
+        line-height: 1;
+        margin-top: 25px;
+        color: $theme-color;
+        display: block;
+        @include mq(xs) {
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    }
+    @include mq(xs) {
+        padding: 30px;
+    }
+}
+
+.blog-tag {
+    & span {
+        color: #15287d;
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 15px;
+    }
+}
+.blog-social {
+    & a {
+        display: inline-block;
+        font-size: 14px;
+        color: $theme-color-light-2;
+        padding-right: 20px;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.news__wrapper-2 {
+    @include mq(md) {
+        margin-top: 50px;
+    }
+    @include mq(sm) {
+        margin-top: 50px;
+    }
+}
+.widget {
+    &__left {
+        @include mq(lg) {
+            padding-left: 0;
+        }
+        @include mq(md) {
+            padding-left: 0;
+        }
+        @include mq(sm) {
+            padding-left: 0;
+        }
+        @include mq(xs) {
+            padding-left: 0;
+        }
+    }
+}
+.blog-author {
+    @include mq(xs) {
+        display: block;
+    }
+    & .news-date {
+        @include mq(xs) {
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+.news__sidebar-item .thumb  {
+    @include mq(xs) {
+        margin-bottom: 20px;
+    }
+}
+.news__sidebar-item .content {
+    @include mq(xs) {
+        padding-left: 0;
+    }
+}
+
+.news__thumb-inner .nice-select:after {
+    margin: 0;
+    top: 49%;
+}
+.news__content-link-2 {
+    & h5 {
+        @include mq(xl) {
+            font-size: 17px;
+        }
+    }
+}
+.news__thumb-inner.transparent {
+    & .nice-select {
+        background-color: transparent !important;
+    }
+}
+.details-content-2 {
+    @include mq(xs) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    & a {
+        @include mq(xs) {
+            margin-bottom: 10px;
+        }
+    }
+    & .news-date {
+        @include mq(xs) {
+            margin-left: 0;
+            padding-left: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

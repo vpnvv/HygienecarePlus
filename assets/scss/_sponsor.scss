@@ -1,0 +1,77 @@
+/*
+========
+10. sponsor
+=========================================
+*/
+.sponsor {
+    &-inner {
+        & .generic-title {
+            @include mq(lg) {
+                margin-bottom: 50px;
+            }
+            @include mq(md) {
+                margin-bottom: 50px;
+            }
+            @include mq(xs) {
+                margin-bottom: 50px;
+            }
+        }
+        &-2 {
+            @include mq(xs) {
+                padding-top: 0;
+            }
+        }
+    }
+    &-area {
+        @include mq(lg) {
+            padding-top: 70px;
+        }
+        @include mq(md) {
+            padding-top: 70px;
+        }
+        @include mq(xs) {
+            padding-top: 50px;
+        }
+    }
+    &-inner {
+        @include mq(lg) {
+            padding-top: 70px;
+        }
+        @include mq(md) {
+            padding-top: 70px;
+        }
+        @include mq(xs) {
+            padding-top: 50px;
+        }
+    }
+}
+.spoonsor-item {
+    & img {
+        @include mq(xs) {
+            max-width: 140px;
+            margin-bottom: 28px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .sponsor-1 {
+        margin-bottom: 0;
+    }
+    li.d-none.number1.d-lg-inline-block {
+        width: auto;
+        float: right;
+    }
+}
+@media (max-width: 1450px) {
+    .icon__content h6 {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1300px) {
+    li.d-none.number1.d-lg-inline-block {
+        padding-left: 25px;
+    }
+}
+.sponsor-active .owl-item img {
+    max-width: 165px;
+}

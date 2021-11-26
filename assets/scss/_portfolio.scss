@@ -1,0 +1,23 @@
+/*
+========
+24. portfolio
+=========================================
+*/
+.portfolio-area {
+    @include mq(lg) {
+        padding-top: 80px;
+    }
+    @include mq(md) {
+        padding-top: 50px;
+    }
+    @include mq(xs) {
+        padding-top: 30px;
+    }
+}
+.project__list {
+    & ul {
+        li {
+            display: block;
+        }
+    }
+}

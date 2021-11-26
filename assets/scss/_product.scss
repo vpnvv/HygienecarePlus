@@ -1,0 +1,114 @@
+/*
+========
+23. product
+=========================================
+*/
+.product {
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+        & img {
+            &.secondary {
+                position: absolute;
+                left: 0;
+                top: 0;
+                @include transition(.3s);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        & span {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            border-radius: 3px;
+            line-height: 1;
+            padding: 5px 7px;
+            background-color: $theme-color;
+            color: $white;
+        }
+        &:hover {
+            & img {
+                &.secondary {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & h5 {
+            margin-bottom: 0;
+            font-size: 18px;
+            color: $theme-color-dark;
+            padding-bottom: 7px;
+            padding-top: 23px;
+        }
+        & span {
+            font-family: $rubik;
+            font-size: 15px;
+            text-transform: uppercase;
+            line-height: 1;
+            color: $theme-color-light-2;
+        }
+    }
+}
+.wishlist-link {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $gray-7;
+    line-height: 36px;
+    text-align: center;
+    color: $red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+span.red-bg {
+    background-color: $red;
+}
+
+/* roduct-action */
+.product-action {
+	position: absolute;
+	bottom: 30px;
+	transition: .3s;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	left: 0;
+	right: 0;
+}
+.product-box:hover .product-action  {
+	opacity: 1;
+	visibility: visible;
+}
+.product-action a {
+	background: #fff;
+	height: 45px;
+	width: 45px;
+	font-size: 16px;
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 50%;
+	margin: 0 4px;
+    box-shadow: 0px 12px 24px 0px rgba(186, 186, 186, 0.3);
+    transform: scaleX(0);
+}
+.product-box:hover:hover .product-action a {
+    transform: scaleX(1);
+}
+.product-action a:last-child{margin-bottom: 0;}
+.product-action a:hover{
+	background: $theme-color;
+	color: $white;
+}
+.shop-top .nice-select {
+    padding-right: 20px;
+}
