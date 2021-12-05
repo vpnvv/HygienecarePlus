@@ -2549,6 +2549,8 @@ label {
     font-size: 14px;
     color: #15287d;
     padding: 5px 10px;
+    border: 1px;
+    border-radius: 50px 50px;
   }
 }
 
@@ -2560,9 +2562,11 @@ label {
   align-items: center;
   width: -moz-max-content;
   width: -webkit-max-content;
-  padding-left: 42px;
-  width: max-content;
+  /* padding-left: 42px; */
+  width: 6rem;
   position: relative;
+  border: 1px;
+  border-radius: 50px 50px;
 }
 .generic-btn:before {
   position: absolute;
@@ -2578,11 +2582,14 @@ label {
   background-color: #d71c23;
   color: white;
   content: "";
+  border: 1px;
+  border-radius: 50px 50px;
 }
 .generic-btn span {
-  padding-left: 0;
+  padding-left: 1rem;
   color: #ffffff;
-  display: table-cell;
+  display: flex;
+  justify-content: center;
   vertical-align: middle;
   font-size: 15px;
   z-index: 9;
@@ -2594,6 +2601,8 @@ label {
   transition: all 0.3s linear 0s;
   line-height: 1;
   font-weight: 600;
+  border: 1px;
+  border-radius: 50px 50px;
 }
 .generic-btn .icon-2 {
   width: 47px;
@@ -2608,6 +2617,8 @@ label {
   -o-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s;
   position: relative;
+  border: 1px;
+  border-radius: 50px 50px;
 }
 .generic-btn .icon-2:before {
   position: absolute;
@@ -2623,6 +2634,8 @@ label {
   background-color: #4598de;
   color: white;
   content: "";
+  border: 1px;
+  border-radius: 50px 50px;
 }
 .generic-btn .icon-2 i {
   position: absolute;
@@ -2636,12 +2649,16 @@ label {
   color: #4598de;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
+  border: 1px;
+  border-radius: 50px 50px;
+} 
+ @media (max-width: 767px) {
   .generic-btn .icon-2 {
     margin-left: 4px;
+    border: 1px;
+    border-radius: 50px 50px;
   }
-}
+} 
 .generic-btn:hover::before {
   left: 0;
   width: 100%;
@@ -2814,7 +2831,7 @@ label {
   border-color: transparent;
 }
 
-button.generic-btn span {
+.button.generic-btn span {
   padding-left: 40px;
   padding-right: 15px;
 }
@@ -3472,7 +3489,7 @@ div a.generic-btn.gradient-btn-1 {
 }
 .icon__content h6 {
   margin-bottom: 6px;
-  line-height: 1;
+  line-height: 3;
   font-size: 15px;
   color: #15287d;
 }
@@ -3697,7 +3714,8 @@ button.mobile-nav-close {
 }
 
 .responsive-menu-3 {
-  padding: 10px 0;
+  padding: 15px 18px;
+  background-color: white;
 }
 .responsive-menu-3 button.toggle-btn {
   background: transparent;
@@ -11084,11 +11102,11 @@ span.details-pro-price {
 
 .core_li{
   color: #007cfb;
-  border: 1px solid #007cfb;
+  /* border: 1px solid #007cfb; */
 }
 
 .core_li:hover{
-  border: 1px solid #d71c23;
+  border: 2px solid #d71c23;
   color: #d71c23;
 
 }
@@ -11099,4 +11117,19 @@ span.details-pro-price {
 
 .about2{
   font-weight: 500;
+}
+
+.menu{
+  display: flex;
+  justify-content: right;
+}
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background: #4598de;
+  border-radius: 20px;
 }
