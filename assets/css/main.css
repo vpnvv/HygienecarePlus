@@ -11125,7 +11125,7 @@ span.details-pro-price {
   justify-content: right;
 }
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   width: 9px;
 }
 
@@ -11133,7 +11133,7 @@ span.details-pro-price {
 ::-webkit-scrollbar-thumb{
   background: #4598de;
   border-radius: 20px;
-} */
+}
 
 
 
@@ -11224,4 +11224,73 @@ span.details-pro-price {
 .alert-danger{
   background-color: #4598de;
   border-color: #4598de;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 20rem;
+	right:38px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #6f6f6f;
+  z-index:100;
+}
+
+.float:hover{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 20rem;
+	right:38px;
+	background-color: #FFF;
+	color: #25d366;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #6f6f6f;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+.float-1{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 25rem;
+	right:38px;
+	background-color: #1a73e8;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #6f6f6f;
+  z-index:100;
+}
+
+.float-1:hover{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 25rem;
+	right:38px;
+	background-color: #FFF;
+	color: #1a73e8;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #6f6f6f;
+  z-index:100;
+}
+
+.my-float-1{
+	margin-top:16px;
 }
