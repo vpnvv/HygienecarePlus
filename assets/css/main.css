@@ -3798,6 +3798,8 @@ button.mobile-nav-close {
   width: 161px;
 }
 
+
+
 @media (max-width: 767px) {
   .header__nav-wrapper .logo img {
     margin-top: 15px;
@@ -11293,4 +11295,48 @@ span.details-pro-price {
 
 .my-float-1{
 	margin-top:16px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-area {
+    height: 14rem;
+  }
+
+  .breadcrumb__content{
+    padding-top: 7rem;
+  }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .breadcrumb-area {
+    height: 11rem;
+  }
+
+  .breadcrumb__content{
+    padding-top: 5rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .breadcrumb-area {
+    height: 11rem;
+  }
+
+  .breadcrumb__content{
+    padding-top: 5rem;
+  }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-area {
+    height: 6rem;
+  }
 }
