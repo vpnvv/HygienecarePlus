@@ -130,6 +130,7 @@
 
 html {
   scroll-behavior: smooth;
+ 
 }
 
 
@@ -138,6 +139,7 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  
 }
 
 ol, ul {
@@ -11410,4 +11412,57 @@ span.details-pro-price {
   .float-1{
     visibility:visible;
     }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .service__wrapper {
+    margin-top: -95px;
+  
+  }
+
+  
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__wrapper {
+    margin-top: -104px;
+ 
+  }
+
+
+}
+
+
+@media (max-width: 767px) {
+  .inservice__wrapperfo {
+    
+  }
+
+
+
+}
+
+@media (max-width: 574px) {
+  .inservice__wrapperfo {
+    
+  }
+
+
+
+}
+
+@media (max-width: 425px) {
+  .inservice__wrapperfo {
+    
+  }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service__wrapper {
+   
+  }
 }
