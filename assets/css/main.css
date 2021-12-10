@@ -8735,7 +8735,7 @@ input.knob {
   line-height: 60px;
 }
 .contact__form form .nice-select ul li {
-  color: #222;
+  color: #1f328a;
 }
 .contact__form form .nice-select::after {
   border-bottom-color: #b8c2f0;
@@ -10226,9 +10226,9 @@ input.knob {
 .post-input input:focus, .post-input textarea:focus {
   border: 2px solid #007cfb;
 }
-.post-input input:invalid, .post-input textarea:invalid {
+/* .post-input input:invalid, .post-input textarea:invalid {
   border-color: #f00;
-}
+} */
 .post-input textarea {
   height: 120px;
   padding-top: 20px;
@@ -10244,12 +10244,12 @@ input.knob {
   }
 }
 
-.blog-details__wrapper .blog-wrapper {
+/* .blog-details__wrapper .blog-wrapper {
   background: #ffffff;
   padding: 40px 0;
   padding-bottom: 80px;
   box-shadow: 0px 10px 30px 0px rgba(223, 223, 223, 0.3);
-}
+} */
 
 iframe {
   width: 100%;
@@ -11522,4 +11522,28 @@ and (-webkit-min-device-pixel-ratio: 3) {
   .service__wrapper {
   
   }
+}
+
+.srvc-cntct{
+
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1f328a;
+  border-color: #1f328a;
+  border-radius: 0%;
+  width: 14rem;
+    height: 4rem;
+    font-size: 25px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #1f328ac2;
+  border-color: #1f328ac2;
+  border-radius: 0%;
+  width: 14rem;
+    height: 4rem;
+    font-size: 25px;
 }
