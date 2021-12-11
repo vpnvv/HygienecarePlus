@@ -11344,37 +11344,47 @@ span.details-pro-price {
 }
 
 .info{
-  display: flex;
-  justify-items: center;
-  /* border: 2px solid #fff; */
-  width: 15rem;
-  height: 4rem;
+  position: fixed;
+    bottom: 430px;
+    right: -8px;
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    width: 235px;
+    height: 59px;
+    /* border: 1px solid; */
 }
+
+.info:hover{
+  background-color: white;
+}
+
 
 .Dsktp-wtsp{
   color: #25d366;
   width: 0rem;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 2rem;
 }
 
 .Dsktp-phn{
   color: #1a73e8;
   width: 0rem;
-  font-size: 30px;
+  font-size: 26px;
   padding-left: 7.5px;
   line-height: 2rem;
-
-
 }
 
 .Dsktp-nmbr{
-  padding-left: 39px;
+  padding-left: 31px;
   line-height: 2rem;
   font-family: sans-serif;
-  color: #000000;
+  color: #6c757d;
   font-size: large;
+}
 
+.Dsktp-nmbr:hover{
+  color: #000;
 }
 
 
