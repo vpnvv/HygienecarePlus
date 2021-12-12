@@ -8824,6 +8824,7 @@ input.knob {
   padding: 100px 80px;
   padding-bottom: 90px;
   border-bottom: 5px solid #007cfb;
+  height: 57rem;
 }
 .map-widget ul {
   margin-top: 40px;
@@ -8939,9 +8940,10 @@ input.knob {
 }
 @media (max-width: 767px) {
   .map-widget {
+    height: 33rem;
     padding: 30px;
     position: static;
-    margin-top: 50px;
+    margin-top: -4px;
   }
 }
 
