@@ -11559,3 +11559,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     height: 4rem;
     font-size: 25px;
 }
+
+.input{
+  caret-color: dodgerblue;
+}
