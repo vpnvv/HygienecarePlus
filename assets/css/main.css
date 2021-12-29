@@ -11251,7 +11251,7 @@ span.details-pro-price {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom: 50px;
+  bottom: 100px;
 	right:8px;
 	background-color: #FFF;
 	color: #25d366;
