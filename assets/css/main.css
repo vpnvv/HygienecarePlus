@@ -11236,7 +11236,7 @@ span.details-pro-price {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom: 2rem;
+	bottom: 100px;
 	right:8px;
 	background-color:#25d366;
 	color:#FFF;
@@ -11251,7 +11251,7 @@ span.details-pro-price {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom: 2rem;
+	bottom: 50px;
 	right:8px;
 	background-color: #FFF;
 	color: #25d366;
@@ -11271,7 +11271,7 @@ span.details-pro-price {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom: 133px;
+  bottom: 202px;
 	right:8px;
 	background-color: #1a73e8;
 	color:#FFF;
@@ -11286,7 +11286,7 @@ span.details-pro-price {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom: 10rem;
+  bottom: 202px;
 	right:8px;
 	background-color: #FFF;
 	color: #1a73e8;
@@ -11391,7 +11391,7 @@ span.details-pro-price {
 
 .mob-info{
   position: fixed;
-  bottom: 52px;
+  bottom: 121px;
   right: -108px;
   display: flex;
   justify-items: center;
